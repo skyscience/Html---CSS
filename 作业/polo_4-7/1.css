@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 1600px;
+    height: 1600px;
+    background-image: url(./img/bg.png)
+}
+.box1{
+    width: 940px;
+    height: 1600px;
+    margin: 0px auto;
+}
+.header{
+    padding-top: 37px;
+    padding-bottom: 46px;
+}
+.header .logo{
+    margin-left: 15px;
+}
+.header .nav{
+    float: right;
+    
+}
+.header .nav li{
+	/*左浮动*/
+	float: left;
+	padding: 0 10px 8px;
+	border-left: 1px #d6d6d6 dotted;
+}
+
+.header .nav a{
+	color: #666;
+	font: bold 14px Georgia;
+	text-decoration: none;
+	vertical-align: 50%;
+}
+
+.header .nav a:hover{
+	color: #a5a4a4;
+	text-decoration: underline;
+}
+
+.header .nav p{
+	color: #b7b7b7;
+	font: 11px Tahoma;
+}
+.box1 .banner{
+    height: 356px;
+    background: url(./img/yinying.png)  bottom center;
+    position: relative;
+}
+.diandian{
+	position: absolute;
+	top: 314px;
+	left: 15px;
+}
+.diandian a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-left: 4px;
+	background: url(./img/baidian.png) no-repeat;
+}
+
+.diandian .active,
+.diandian a:hover{
+	background: url(./img/landian.png) no-repeat;
+}
