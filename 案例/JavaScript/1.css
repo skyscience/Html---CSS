@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+}
+
+.box1{
+    height: 30px;
+    max-height: 30px;
+    color: blueviolet;
+}
+.box2{
+    color: chocolate; 
+}

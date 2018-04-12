@@ -1,0 +1,59 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+    function calc() {
+        var n1 = parseInt(document.getElementById("n1").value)
+        var s = document.getElementById("s").value
+        var n2 = parseInt(document.getElementById("n2").value)
+        var result = 0
+        if (n1 == "NaN" || n2 == "NaN") {
+            alert("输入的内容禁止为空");
+            return;
+        }
+        if (isNaN(n1) || isNaN(n2)) {
+            alert('请输入数字');
+            return;
+        }
+        switch (s) {
+            case "+": result = n1 + n2; break;
+            case "-": result = n1 - n2; break;
+            case "*": result = n1 * n2; break;
+            case "/": result = n1 / n2; break;
+        }
+        alert(result);
+    }
+</script>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;}
+    #n1 {
+        position: absolute;
+        left: 10px;
+        top: 120px;}
+    #s {
+        position: absolute;
+        left: 160px;
+        top: 120px;}
+    #n2 {
+        position: absolute;
+        left: 210px;
+        top: 120px;}
+    #i2 {
+        position: absolute;
+        left: 380px;
+        top: 120px;}
+</style>
+<body>
+    <br><br><h1>计算器</h1>
+    <pre>
+                <input id="n1">  
+                <select id="s" >
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input id="n2">
+                <input id='i2' type="button" value="计算" onclick="calc()"/>
+                </pre>
+</body>
